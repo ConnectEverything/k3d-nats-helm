@@ -4,9 +4,11 @@ nats:
 
 cluster:
   enabled: true
+  noAdvertise: true
 
 leafnodes:
   enabled: true
+  noAdvertise: true
 
 websocket:
   enabled: true

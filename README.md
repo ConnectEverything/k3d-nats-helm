@@ -28,18 +28,13 @@ Or if you already had installed, ensure it is up-to-date:
 helm repo update nats
 ```
 
-Create a `values.yaml` file with desired configuration. See [here](https://github.com/nats-io/k8s/blob/main/helm/charts/nats/values.yaml) for a list of all available options. A minimal one that will enable JetStream and expose the NATS endpoints:
-
-```yaml
-```
-
-Now install the chart in the new cluster.
+Now install the chart in the new cluster using the provided `values.yaml` as a starting point. See the full set of options [here](https://github.com/nats-io/k8s/tree/main/helm/charts/nats)
 
 ```sh
 helm install nats nats/nats -f values.yaml
 ```
 
-Install an load balancer service:
+Install a load balancer service:
 
 ```sh
 kubectl apply -f lb.yaml
