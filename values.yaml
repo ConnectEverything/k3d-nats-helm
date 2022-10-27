@@ -1,0 +1,13 @@
+nats:
+  jetstream:
+    enabled: true
+
+cluster:
+  enabled: true
+
+leafnodes:
+  enabled: true
+
+websocket:
+  enabled: true
+  port: 8443
